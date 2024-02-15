@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: 'Arial', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  margin: 0;
+  background-color: aquamarine;
 }
 
-.App-link {
-  color: #61dafb;
+.app {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+
+  color: #f3103d;
+}
+
+.counter-container {
+  display: flex;
+  align-items: center;
+}
+
+.counter {
+  font-size: 4em;
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #da5b5b;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.counter.negative {
+  background-color: #ff9999;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.increment-btn,.decrement-btn {
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.increment-btn {
+  background-color: #4CAF50;
+}
+
+.decrement-btn {
+  background-color: #f44336;
 }
